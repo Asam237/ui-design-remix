@@ -6,6 +6,7 @@ import arrowImg from "../../assets/pictures/arrow.png"
 import msgImg from "../../assets/pictures/mail.png"
 
 export function MarketPlacePage() {
+
     return (
         <>
             <HeaderComponent />
