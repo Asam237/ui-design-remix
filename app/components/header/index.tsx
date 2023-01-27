@@ -1,84 +1,55 @@
 import { Link } from "react-router-dom"
-import accountImg from "../../assets/pictures/account.png"
-import searchImg from "../../assets/pictures/search.png"
-import shoppingImg from "../../assets/pictures/shopping.png"
+import MenuImg from "../../assets/pictures/menu.png"
 
 interface NavsProps {
     link: string
-    name: string
+    name?: string
+    img?: any
 }
-
-const imgs = [
-    accountImg,
-    searchImg,
-    shoppingImg
-]
-
 const navs: NavsProps[] = [
     {
-        link: "#article",
-        name: "Article"
+        link: "#",
+        name: "About technology"
     },
     {
-        link: "#radio",
-        name: "Radio"
+        link: "#",
+        name: "Pricing"
     },
     {
-        link: "#podcast",
-        name: "Podcast"
+        link: "#",
+        name: "Contact"
     },
     {
-        link: "#beawriter",
-        name: "Be a writer"
+        link: "#",
+        name: "Download files"
     },
     {
-        link: "#talkous",
-        name: "Talk Ous"
-    },
+        link: "#",
+        img: MenuImg
+    }
 ]
 
-export function HeaderComponent() {
+export default function HeaderComponent() {
     return (
-        <header>
-            <div className="site__header-txt bg-black text-center py-6">
-                <p className="text-white text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
+        <header className="flex flex-col md:flex-row md:justify-between md:items-center">
+            <h1 className="text-2xl" style={{ fontFamily: 'Fredoka One, cursive' }}> SOLUTION</h1>
+
+            <div>
+                <ul className="flex flex-col md:flex-row">
+                    {
+                        navs.map((item, index) => {
+                            return (
+                                <li key={index} className="mt-1 md:mt-0 md:ml-8">
+                                    <Link to={item.link}>{item.name}</Link>
+                                </li>
+                            )
+                        })
+                    }
+                    <li className="mt-1 md:mt-0 md:ml-8">
+                        <img src={MenuImg} className="w-6 h-6" alt="" />
+                    </li>
+                </ul>
             </div>
-            <div className="container mx-auto pt-10">
-                <div className="flex justify-between items-center">
-                    <div className="flex items-center">
-
-                        <div className="w-8 h-8 mr-4 border-4 border-black rounded-full" />
-                        <Link to="#" className="mylogo text-lg font-extrabold">SOPA</Link>
-                    </div>
-                    <ul className="flex">
-                        {
-                            navs.map((item, index) => {
-                                return (
-
-                                    <li key={index} className="link mx-4 text-base font-normal text-black">
-                                        <Link to={item.link}>{item.name}</Link>
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
-                    <div className="icon">
-                        <ul className="flex">
-                            {
-                                imgs.map((item, index) => {
-                                    return (<li className="w-5 h-5 ml-4" key={index}>
-                                        <img src={item} alt="" />
-                                    </li>
-                                    )
-                                })
-                            }
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
         </header>
     )
 }

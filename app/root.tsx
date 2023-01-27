@@ -11,7 +11,7 @@ import {
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "SOPA Integration by ASAM.",
+  title: "Integration by ASAM.",
   viewport: "width=device-width,initial-scale=1",
 });
 
@@ -26,8 +26,8 @@ export default function App() {
   return (
     <html lang="en">
       <head>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
         <Meta />
         <Links />
       </head>
