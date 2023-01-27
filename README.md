@@ -42,7 +42,7 @@ All the code in this repository are mean for demo only and are not optmized. Mak
 
 ## Authors
 
-This toolkit is curated and maintained by the Studio Freight Things team:
+This UI Challenges is curated and maintained by:
 
 - Abba Sali Aboubakar Mamate ([@asam_237](https://twitter.com/asam_237))
 
