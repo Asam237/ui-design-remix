@@ -586,6 +586,22 @@ video {
   margin-top: 0.25rem;
 }
 
+.mt-\[38vh\] {
+  margin-top: 38vh;
+}
+
+.mt-\[48vh\] {
+  margin-top: 48vh;
+}
+
+.mt-\[58vh\] {
+  margin-top: 58vh;
+}
+
+.mt-\[60vh\] {
+  margin-top: 60vh;
+}
+
 .inline-block {
   display: inline-block;
 }

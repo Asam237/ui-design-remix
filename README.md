@@ -1,6 +1,14 @@
-# Welcome to Remix!
+## Introduction
 
-- [Remix Docs](https://remix.run/docs)
+A new Remix project containing all my remix UI challenges.
+<br/>
+
+## Composition
+
+This starter kit is composed of:
+
+- [Remix](http://remix.run)
+  <br/>
 
 ## Development
 
@@ -28,26 +36,18 @@ npm start
 
 Now you'll need to pick a host to deploy it to.
 
-### DIY
+## Warning
 
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+All the code in this repository are mean for demo only and are not optmized. Make sure do improve the code before using it.
 
-Make sure to deploy the output of `remix build`
+## Authors
 
-- `build/`
-- `public/build/`
+This toolkit is curated and maintained by the Studio Freight Things team:
 
-### Using a Template
+- Abba Sali Aboubakar Mamate ([@asam_237](https://twitter.com/asam_237))
 
-When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over your `app/` folder to the new project that's pre-configured for your target server.
+<br/>
 
-```sh
-cd ..
-# create a new project, and pick a pre-configured host
-npx create-remix@latest
-cd my-new-remix-app
-# remove the new project's app (not the old one!)
-rm -rf app
-# copy your app over
-cp -R ../my-old-remix-app/app app
-```
+## License
+
+[The MIT License.](https://opensource.org/licenses/MIT)

@@ -5,34 +5,8 @@ import RightArrowImg from "../assets/pictures/rightarrow.png"
 import TextWithBackgroundComponent from "~/components/textWithBackground"
 import MyText from "~/components/myText"
 import DownloadComponent from "~/components/download"
-import { gsap } from "gsap";
-import { useLayoutEffect, useRef } from "react"
-// import { TimelineLite } from "gsap"
-
-// let loader = document.querySelector(".loader")
-// TweenLite.defaultEase = Power2.easeInOut
-
-// function start() {
-//   let master = new TimelineLite({ paused: true })
-//   master.to(loader, 1, { autoAlpha: 0 })
-//   master.play()
-// }
-
-// window.addEventListener("load", start)
 
 export default function Index() {
-  const comp = useRef()
-  const circle: any = useRef();
-  useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap.to(".loader", {});
-      gsap.to(circle.current, { rotation: 360 });
-
-    }, comp);
-
-    return () => ctx.revert();
-  }, [])
-
   return (
     <div className="site py-4 lg:py-8 px-4 sm:px-6 xl:px-0">
       <div className="container mx-auto">
@@ -97,7 +71,7 @@ export default function Index() {
           </div>
         </main>
       </div>
-      <div className="container mx-auto mt-[28vh] md:mt-0">
+      <div className="container mx-auto mt-[60vh] md:mt-0">
         <DownloadComponent />
       </div>
     </div>
