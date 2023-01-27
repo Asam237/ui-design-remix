@@ -49,7 +49,7 @@ All the code in this repository are mean for demo only and are not optmized. Mak
 This UI Challenges is curated and maintained by:
 
 - Abba Sali Aboubakar Mamate ([@asam_237](https://twitter.com/asam_237))
-- More stuffs about me: ([@https://abbasali.cm](https://abbasali.cm))
+- my website: [https://abbasali.cm](https://abbasali.cm)
 
 <br/>
 
